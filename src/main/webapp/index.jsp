@@ -56,7 +56,9 @@ page-container-bg-solid 背景颜色
                     </ul>
                 </div>
 
-                <div id="main-content"></div>
+                <div id="main-content">
+                    <jsp:include page="table.jsp"></jsp:include>
+                </div>
             </div>
         </div>
         <!-- END CONTENT -->

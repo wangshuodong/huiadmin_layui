@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="commons/css/global.css" media="all">
     <style>
     </style>
 </head>
@@ -78,7 +79,7 @@
     <div class="layui-body">
         <!-- 内容主体区域 -->
         <div style="padding: 25px;" id="main-content">
-            <%@ include file="table.jsp" %>
+            <%@ include file="form.jsp" %>
         </div>
     </div>
 

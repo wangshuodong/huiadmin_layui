@@ -163,6 +163,82 @@
     </tr>
   </tbody>
 </table>
+<table class="layui-table" lay-filter="parse-table-demo">
+  <thead>
+    <tr>
+     <td rowspan="2" lay-data="{field:'louceng'}">楼层</td>
+     <td colspan="2">1单元</td>
+     <td colspan="2">2单元</td>
+    </tr>
+    <tr>
+     <td lay-data="{field:'men1', width:80}">1门</td>
+     <td lay-data="{field:'men2', width:80}">2门</td>
+     <td lay-data="{field:'men3', width:80}">1门</td>
+     <td lay-data="{field:'men4', width:80}">2门</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>3楼</td>
+     <td>301</td>
+     <td>302</td>
+     <td>301</td>
+     <td>302</td>
+    </tr>
+    <tr>
+     <td>2楼</td>
+     <td>201</td>
+     <td>202</td>
+     <td>201</td>
+     <td>202</td>
+    </tr>
+    <tr>
+     <td>1楼</td>
+     <td>101</td>
+     <td>102</td>
+     <td>101</td>
+     <td>102</td>
+    </tr>
+  </tbody>
+</table>
+<table class="layui-table" lay-filter="parse-table-demo">
+  <thead>
+    <tr>
+     <td rowspan="2" lay-data="{field:'louceng'}">楼层</td>
+     <td colspan="2">1单元</td>
+     <td colspan="2">2单元</td>
+    </tr>
+    <tr>
+     <td lay-data="{field:'men1', width:80}">1门</td>
+     <td lay-data="{field:'men2', width:80}">2门</td>
+     <td lay-data="{field:'men3', width:80}">1门</td>
+     <td lay-data="{field:'men4', width:80}">2门</td>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>3楼</td>
+     <td>301</td>
+     <td>302</td>
+     <td>301</td>
+     <td>302</td>
+    </tr>
+    <tr>
+     <td>2楼</td>
+     <td>201</td>
+     <td>202</td>
+     <td>201</td>
+     <td>202</td>
+    </tr>
+    <tr>
+     <td>1楼</td>
+     <td>101</td>
+     <td>102</td>
+     <td>101</td>
+     <td>102</td>
+    </tr>
+  </tbody>
+</table>
 
 <script type="text/html" id="toolbarDemo">
   <i class="layui-icon">&#xe654;</i>

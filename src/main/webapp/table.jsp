@@ -169,7 +169,7 @@
   <i class="layui-icon">&#xe640;</i>
 </script>
 
-<script src="layui/layui.js" charset="utf-8"></script>
+<script src="layui.js" charset="utf-8"></script>
 <script>
 layui.use('table', function(){
   var table = layui.table;

@@ -6,7 +6,7 @@
       <!-- BEGIN LOGO -->
       <div class="page-logo">
          <a href="demo.jsp">
-            <img src="assets/layouts/layout/img/logo.png" alt="logo" class="logo-default"/>
+            <img src="${staticPath }/assets/layouts/layout/img/logo.png" alt="logo" class="logo-default"/>
          </a>
          <div class="menu-toggler sidebar-toggler">
             <span></span>

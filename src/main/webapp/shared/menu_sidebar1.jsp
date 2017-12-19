@@ -30,7 +30,7 @@
 				</a>
 				<ul class="sub-menu">
 					<li class="nav-item start active">
-						<a href="rest/page/dashboard" class="nav-link " id="btn-dashboard">
+						<a href="${staticPath }/table.jsp" class="nav-link " id="btn-dashboard">
 							<span class="title">我的桌面</span>
 						</a>
 					</li>
@@ -44,7 +44,7 @@
 				</a>
 				<ul class="sub-menu">
 					<li class="nav-item  ">
-						<a href="form.jsp" class="nav-link ">
+						<a href="${staticPath }/form.jsp" class="nav-link ">
 							<span class="title">新建订单</span>
 						</a>
 					</li>

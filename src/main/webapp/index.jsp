@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="shared/taglib.jsp"%>
+<%@ include file="shared/global.jsp"%>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -57,7 +57,6 @@ page-container-bg-solid 背景颜色
                 </div>
 
                 <div id="main-content">
-                    <jsp:include page="table.jsp"></jsp:include>
                 </div>
             </div>
         </div>

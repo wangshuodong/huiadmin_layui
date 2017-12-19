@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <title>表格操作 - layui</title>
 
-<link rel="stylesheet" href="layui/css/layui.css">
+<link rel="stylesheet" href="css/layui.css">
 
 <style>
 </style>
@@ -245,7 +245,7 @@
   <i class="layui-icon">&#xe640;</i>
 </script>
 
-<script src="layui/layui.js" charset="utf-8"></script>
+<script src="layui.js" charset="utf-8"></script>
 <script>
 layui.use('table', function(){
   var table = layui.table;

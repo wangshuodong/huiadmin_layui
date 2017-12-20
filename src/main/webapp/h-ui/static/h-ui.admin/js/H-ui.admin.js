@@ -57,8 +57,9 @@ function Hui_admin_tab(obj){
 		topWindow = $(window.parent.document),
 		show_navLi = topWindow.find("#min_title_list li"),
 		iframe_box = topWindow.find("#iframe_box");
+	//console.log(topWindow);
 	if(!href||href==""){
-		alert("暂未上线。。。");
+		alert("data-href不存在，v2.5版本之前用_href属性，升级后请改为data-href属性");
 		return false;
 	}if(!title){
 		alert("v2.5版本之后使用data-title属性");
@@ -76,7 +77,6 @@ function Hui_admin_tab(obj){
 		}
 	});
 	if(!bStop){
-
 		creatIframe(href,title);
 		min_titleList();
 	}
@@ -95,7 +95,7 @@ function min_titleList(){
 
 /*创建iframe*/
 function creatIframe(href,titleName){
-	var topWindow=$(window.parent.parent.document),
+	var topWindow=$(window.parent.document),
 		show_nav=topWindow.find('#min_title_list'),
 		iframe_box=topWindow.find('#iframe_box'),
 		iframeBox=iframe_box.find('.show_iframe'),
@@ -262,8 +262,6 @@ $(function(){
 	/*选项卡导航*/
 	$(".Hui-aside").on("click",".menu_dropdown a",function(){
 		Hui_admin_tab(this);
-		$(".Hui-aside").find(".menu_dropdown dl dd ul li").removeClass("current");
-		$(this).parent().addClass("current");
 	});
 	
 	$(document).on("click","#min_title_list li",function(){

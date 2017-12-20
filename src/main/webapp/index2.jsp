@@ -7,6 +7,7 @@
     <title>layout 后台大布局 - Layui</title>
     <link rel="stylesheet" href="${staticPath }/layui/css/layui.css">
     <link rel="stylesheet" href="${staticPath }/commons/css/global.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_tnyc012u2rlwstt9.css" media="all" />
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -19,7 +20,6 @@
             <ul class="layui-nav layui-layout-left">
                 <li class="layui-nav-item"><a href="">控制台</a></li>
                 <li class="layui-nav-item"><a href="">商品管理</a></li>
-                <li class="layui-nav-item"><a href="">用户</a></li>
                 <li class="layui-nav-item">
                     <a href="javascript:;">其它系统</a>
                     <dl class="layui-nav-child">
@@ -52,7 +52,7 @@
                 <li class="layui-nav-item layui-nav-itemed">
                     <a class="" href="javascript:;">所有商品</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;" onclick="aa('form.html')">列表一</a></dd>
+                        <dd><a href="javascript:;" onclick="aa('form.jsp')">列表一</a></dd>
                         <dd><a href="javascript:;">列表二</a></dd>
                         <dd><a href="javascript:;">列表三</a></dd>
                         <dd><a href="">超链接</a></dd>
@@ -72,10 +72,10 @@
         </div>
     </div>
 
-    <div class="layui-body">
+
         <!-- 内容主体区域 -->
         <div style="padding: 15px;" id="main-content">内容主体区域</div>
-    </div>
+
 
     <div class="layui-footer footer">
         <!-- 底部固定区域 -->
@@ -103,15 +103,12 @@
         }()
     };
     layui.config({
-        base: '//res.layui.com/lay/modules/layui/'
-        ,version: '1512984638033'
+        base: '${staticPath }/commons/js/'
     }).use('global');
 
     function aa(url) {
-        alert(url);
         if (url != null && url != 'javascript:;') {
             $.get(url, function(data) {
-                console.info(data);
                 $('#main-content').html(data);
             });
         }

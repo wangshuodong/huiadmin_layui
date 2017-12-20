@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
-<%@ include file="shared/global.jsp"%>
+<%@ include file="shared/global.jsp" %>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
 <!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
@@ -13,7 +13,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta content="width=device-width, initial-scale=1" name="viewport"/>
 
-    <%@ include file="shared/importCss.jsp"%>
+    <%@ include file="shared/importCss.jsp" %>
 
     <!-- BEGIN PAGE LEVEL PLUGINS -->
     <!-- END PAGE LEVEL PLUGINS -->
@@ -26,7 +26,7 @@ page-container-bg-solid 背景颜色
 -->
 <body class="page-header-fixed page-header-fixed-mobile page-sidebar-closed-hide-logo page-content-white">
 <div class="page-wrapper">
-    <%@ include file="shared/pageHeader.jsp"%>
+    <%@ include file="shared/pageHeader.jsp" %>
 
     <div class="clearfix"></div>
 
@@ -34,7 +34,7 @@ page-container-bg-solid 背景颜色
     <div class="page-container">
 
         <!-- BEGIN SIDEBAR 侧边栏包含快速搜索和主要的导航菜单。-->
-        <%@ include file="shared/menu_sidebar1.jsp"%>
+        <%@ include file="shared/menu_sidebar1.jsp" %>
         <!-- END SIDEBAR 侧边栏包含快速搜索和主要的导航菜单。-->
 
         <!-- BEGIN CONTENT -->
@@ -65,18 +65,17 @@ page-container-bg-solid 背景颜色
 </div>
 
 <%--<%@ include file="shared/footer.jsp"%>--%>
-<%@ include file="shared/importJs.jsp"%>
+<%@ include file="shared/importJs.jsp" %>
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 <!-- END PAGE LEVEL PLUGINS -->
 <script>
-    $(document).ready(function() {
+    $(document).ready(function () {
 
-        $('#clickmewow').click(function()
-        {
+        $('#clickmewow').click(function () {
             $('#radio1003').attr('checked', 'checked');
         });
 
-        $('#page-sidebar-menu li ul a').click(function(e) {
+        $('#page-sidebar-menu li ul a').click(function (e) {
             e.preventDefault();
             var url = this.href;
             var menuContainer = $('.page-sidebar ul');
@@ -84,7 +83,7 @@ page-container-bg-solid 背景颜色
             $(this).parents('li').addClass('active');
 
             if (url != null && url != 'javascript:;') {
-                $.get(url, function(data) {
+                $.get(url, function (data) {
                     $('#main-content').html(data);
                 });
             }

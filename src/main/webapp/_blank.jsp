@@ -57,7 +57,7 @@
 						</ul>
 					</li>
 					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe68a;</i></a> </li>
-					<li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
+					<%--<li id="Hui-skin" class="dropDown right dropDown_hover"> <a href="javascript:;" class="dropDown_A" title="换肤"><i class="Hui-iconfont" style="font-size:18px">&#xe62a;</i></a>
 						<ul class="dropDown-menu menu radius box-shadow">
 							<li><a href="javascript:;" data-val="default" title="默认（黑色）">默认（黑色）</a></li>
 							<li><a href="javascript:;" data-val="blue" title="蓝色">蓝色</a></li>
@@ -66,7 +66,7 @@
 							<li><a href="javascript:;" data-val="yellow" title="黄色">黄色</a></li>
 							<li><a href="javascript:;" data-val="orange" title="橙色">橙色</a></li>
 						</ul>
-					</li>
+					</li>--%>
 				</ul>
 			</nav>
 		</div>
@@ -75,19 +75,20 @@
 <!--/_header 作为公共模版分离出去-->
 
 
-<section class="Hui-article-box">
-	<nav class="breadcrumb"><i class="Hui-iconfont"></i> <a href="/" class="maincolor">首页</a> <span class="c-999 en">&gt;</span><span class="c-666">空白页</span></nav>
-	<div class="Hui-article pd-20" id="main-content">
-		<article class="cl pd-20">
-			这是个空白页，请在此处加入您的代码！
-		</article>
-	</div>
+<section class="Hui-article-box" id="main-content">
+
 </section>
 
 
 <!--_menu 作为公共模版分离出去-->
 <aside class="Hui-aside">
 	<div class="menu_dropdown bk_2">
+		<dt><i class="Hui-iconfont">&#xe616;</i> 首页</dt>
+		<dd>
+			<ul>
+				<li><a href="javascript:;" title="资讯管理" onclick="aa('form.jsp')">资讯管理</a></li>
+			</ul>
+		</dd>
 		<dl id="menu-article">
 			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
@@ -100,7 +101,7 @@
 			<dt><i class="Hui-iconfont">&#xe613;</i> 图片管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="javascript:;" title="图片管理" onclick="aa('welcome.jsp')">图片管理</a></li>
+					<li><a href="javascript:;" title="图片管理" onclick="aa('personal.jsp')">图片管理</a></li>
 				</ul>
 			</dd>
 		</dl>

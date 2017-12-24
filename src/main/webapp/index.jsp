@@ -24,7 +24,7 @@ page-header-fixed-mobile 手机页面固定顶部
 page-sidebar-closed 隐藏菜单栏
 page-container-bg-solid 背景颜色
 -->
-<body class="page-header-fixed page-header-fixed-mobile page-sidebar-closed-hide-logo page-content-white">
+<body class="page-header-fixed page-header-fixed-mobile page-sidebar-closed-hide-logo page-content-white page-sidebar-fixed">
 <div class="page-wrapper">
     <%@ include file="shared/pageHeader.jsp" %>
 
@@ -44,10 +44,6 @@ page-container-bg-solid 背景颜色
                     <ul class="page-breadcrumb">
                         <li>
                             <a href="index.html">主页</a>
-                            <i class="fa fa-angle-right"></i>
-                        </li>
-                        <li>
-                            <a href="#">测试</a>
                             <i class="fa fa-angle-right"></i>
                         </li>
                         <li>
@@ -71,10 +67,6 @@ page-container-bg-solid 背景颜色
 <script>
     $(document).ready(function () {
 
-        $('#clickmewow').click(function () {
-            $('#radio1003').attr('checked', 'checked');
-        });
-
         $('#page-sidebar-menu li ul a').click(function (e) {
             e.preventDefault();
             var url = this.href;
@@ -85,6 +77,7 @@ page-container-bg-solid 背景颜色
             if (url != null && url != 'javascript:;') {
                 $.get(url, function (data) {
                     $('#main-content').html(data);
+                    $('.page-sidebar').removeClass("in");
                 });
             }
         });

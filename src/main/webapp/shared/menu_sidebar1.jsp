@@ -23,14 +23,14 @@
 			</li>
 			<!-- DOC: To remove the search box from the sidebar you just need to completely remove the below "sidebar-search-wrapper" LI element -->
 			<li class="nav-item start active">
-				<a href=javascript:;"" class="nav-link nav-toggle">
+				<a href="javascript:;" class="nav-link nav-toggle">
 					<i class="icon-home"></i>
 					<span class="title">欢迎使用</span>
 					<span class="selected"></span>
 				</a>
 				<ul class="sub-menu">
 					<li class="nav-item start active">
-						<a href="${staticPath }/table.jsp" class="nav-link " id="btn-dashboard">
+						<a href="${staticPath }/test.jsp" class="nav-link " id="btn-dashboard">
 							<span class="title">我的桌面</span>
 						</a>
 					</li>
@@ -49,7 +49,7 @@
 						</a>
 					</li>
 					<li class="nav-item  ">
-						<a href="/rest/page/dashboard" class="nav-link ">
+						<a href="${staticPath }/table.jsp" class="nav-link ">
 							<span class="title">订单报价</span>
 						</a>
 					</li>
